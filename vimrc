@@ -12,3 +12,16 @@ source $VIMRUNTIME/defaults.vim
 
 " filetype plugin is used by netrw and pydiction
 filetype plugin on
+
+" search down into subfolders, provides tab-completion for all
+" file-related tasks
+set path+=**
+
+" Plugin Specific Settings
+" =====================================================================
+
+" pydiction
+" ---------
+let g:pydiction_location = '/home/hmuller/.vim/pack/vendor/opt/pydiction/complete-dict'
+
+
