@@ -31,6 +31,6 @@ autocmd FileType gitcommit setlocal spell
 
 " pydiction
 " ---------
-let g:pydiction_location = '/home/hmuller/.vim/pack/vendor/opt/pydiction/complete-dict'
+let g:pydiction_location = '~/.vim/pack/vendor/opt/pydiction/complete-dict'
 
 
