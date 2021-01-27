@@ -26,6 +26,12 @@ autocmd FileType gitcommit setlocal spell
 " Testing to see what this does
 "set complete+=kspell
 
+" TODO: Figure out how to set this conditionally depending on display
+" server in use (x11 or wayland)
+" Shift-Insert copies text from the X11 clipboard into vim, this key
+" mapping copies visually selected lines from vim into the clipboard.
+vmap <S-c> :w !xclip -selection clipboard<CR><CR>
+
 " Plugin Specific Settings
 " =====================================================================
 
