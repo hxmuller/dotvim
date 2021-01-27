@@ -3,6 +3,10 @@
 "
 " Additionally, a symbolic link ~/.vimrc is created pointing to
 " ~/.vim/vimrc because it is looked for there first.
+"
+" On Debian system, install vim-gtk vs vim-nox to get out of the
+" box clipboard usage. vim-nox is not compiled with clipboard
+" support.
 
 " Recommended in :help vimrc-intro
 source $VIMRUNTIME/defaults.vim
@@ -25,12 +29,6 @@ autocmd FileType gitcommit setlocal spell
 
 " Testing to see what this does
 "set complete+=kspell
-
-" TODO: Figure out how to set this conditionally depending on display
-" server in use (x11 or wayland)
-" Shift-Insert copies text from the X11 clipboard into vim, this key
-" mapping copies visually selected lines from vim into the clipboard.
-vmap <S-c> :w !xclip -selection clipboard<CR><CR>
 
 " Plugin Specific Settings
 " =====================================================================
