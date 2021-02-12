@@ -21,9 +21,6 @@ filetype plugin on
 " file-related tasks
 set path+=**
 
-" turn on spell checking for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
-
 " Testing to see what this does
 "set complete+=kspell
 
