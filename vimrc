@@ -24,9 +24,6 @@ set path+=**
 " turn on spell checking for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
 
-" turn on spell checking for git commit messages
-autocmd FileType gitcommit setlocal spell
-
 " Testing to see what this does
 "set complete+=kspell
 
