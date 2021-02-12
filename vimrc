@@ -21,6 +21,9 @@ filetype plugin on
 " file-related tasks
 set path+=**
 
+" display status line always
+set laststatus=2
+
 " Testing to see what this does
 "set complete+=kspell
 
