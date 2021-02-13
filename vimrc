@@ -27,6 +27,18 @@ set laststatus=2
 " Testing to see what this does
 "set complete+=kspell
 
+" Global autocommands
+" =====================================================================
+augroup localGroup
+  " Clear autocommands everytime vimrc is (re)loaded.
+  autocmd!
+  
+  " Set trailing whitespace highlighting for html,css, and javascript
+  autocmd FileType html,css,javascript highlight ExtraWhitespace ctermbg=red guibg=red
+  autocmd FileType html,css,javascript match ExtraWhitespace /\s\+$/
+augroup END
+
+
 " Plugin Specific Settings
 " =====================================================================
 
