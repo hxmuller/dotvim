@@ -2,10 +2,10 @@
 " [filetype] specific settings
 
 " Only do this when not done yet for this buffer
-if exists("b:did_ftplugin")
+if exists("b:did_local_ftplugin")
 	finish
 endif
-let b:did_ftplugin = 1
+let b:did_local_ftplugin = 1
 
 " ftplugin specific stuff here
 
@@ -13,4 +13,4 @@ let b:did_ftplugin = 1
 function! s:undo()
 	setl [option]<
 endfunction
-let b:undo_ftplugin .= "call s:undo()"
+let b:undo_local_ftplugin .= "call s:undo()"
