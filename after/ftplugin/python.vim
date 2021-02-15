@@ -15,5 +15,5 @@ packadd pydiction
 function! s:undo()
 	setl [option]<
 endfunction
-let b:undo_local_ftplugin .= "call s:undo()"
+let b:undo_local_ftplugin = "call s:undo()"
 
