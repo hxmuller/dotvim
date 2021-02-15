@@ -13,4 +13,4 @@ let b:did_local_ftplugin = 1
 function! s:undo()
 	setl [option]<
 endfunction
-let b:undo_local_ftplugin .= "call s:undo()"
+let b:undo_local_ftplugin = "call s:undo()"
